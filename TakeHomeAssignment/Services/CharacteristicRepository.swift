@@ -28,8 +28,8 @@ final class CharacteristicRepository: CharacteristicRepositoryInterface {
         let req: NSFetchRequest<Characteristic> = Characteristic.fetchRequest()
         return Future { promise in
             do {
-                let mocItems = try self.context.fetch(req)
-                let models = mocItems.compactMap { $0.toModel() }
+                let items = try self.context.fetch(req)
+                let models = items.compactMap { $0.toModel() }
                 promise(.success(models))
             } catch {
                 promise(.failure(error))
