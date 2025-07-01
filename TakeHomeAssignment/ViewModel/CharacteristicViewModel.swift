@@ -89,7 +89,7 @@ final class CharacteristicViewModel: ObservableObject {
                     NotificationManager.shared.scheduleReminder(
                         id: identifier.uuidString,
                         title: self.name,
-                        body: "Alert \(self.name)",
+                        body: "Update \(self.name)",
                         interval: self.reminderInterval
                     )
                 } else {
