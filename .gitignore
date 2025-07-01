@@ -1,0 +1,31 @@
+# Xcode
+*.xcuserstate
+*.xcscmblueprint
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+*.xcworkspace/*
+!*.xcworkspace/contents.xcworkspacedata
+
+# Build
+build/
+DerivedData/
+
+
+# Temporary Files
+*.moved-aside
+*.swp
+*.lock
+*.bak
+*.tmp
+
+# macOS Finder files
+.DS_Store
+
+# User-specific Xcode files
+*.xccheckout
+*.xcuserstate
+*.xcuserdata/
+
+* text=auto
+*.swift text eol=lf
