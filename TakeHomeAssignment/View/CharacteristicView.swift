@@ -38,7 +38,6 @@ struct CharacteristicView: View {
                     Toggle("Enable", isOn: $vm.reminderEnabled)
                     if vm.reminderEnabled {
                         Picker("Interval", selection: $vm.reminderInterval) {
-                            Text("1 min").tag(60.0)
                             Text("5 min").tag(300.0)
                             Text("15 min").tag(900.0)
                             Text("1 hr").tag(3600.0)
